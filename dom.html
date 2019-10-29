@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cercle</title>
+    <script src="dom.js" async></script>
+    <style>
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    .circle {
+        position: absolute;
+        top: 1px;
+        width: 50px;
+        height: 50px;
+        color: transparent;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+</body>
+
+</html>
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Autonome</title>
+	<div class="wrapper">
+	<button>click here </button>
+</div>
+	<style type="text/css">
+		$button-bg:#306895;
+$white:#fff;
+body,html{
+  margin: 0;
+  padding:0;
+  background-color: #fe3040;
+}
+.wrapper{
+  display: flex;
+  flex: 1;
+  height:100vh;
+  justify-content: center;
+  align-items: center;
+button{
+    width: 10rem;
+    height: 5rem;
+    display: block;
+    background-color: $button-bg;
+    border:none;
+    color:$white;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    transition: all .35s ease;
+    cursor:pointer;
+    &:hover{
+      background-color: #307890;
+    }
+    &:focus{
+      outline:none;
+    }
+  }
+}
+/*body{
+
+background-color: gray;
+}
+div{
+	background-color: yellow;
+}*/
+</style>
+<script >
+	const button = document.getElementsByTagName('button')[0];
+button.addEventListener('click', () => {
+  document.body.style.backgroundColor = colors();
+});
+
+function colors() {
+  let colorArray = [];    
+
+  for(let i =0; i < 3 ; i++){
+    colorArray.push(Math.floor(Math.random() * (255 - 0) + 0));
+  }
+  // rgb -> hex
+  let color = colorArray
+    .map( x => x.toString(16))
+    .join('');
+
+  return `#${color}`;
+}
+</script>
+</head>
+<body>
+
+
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+body{
+  width :100vw;
+  height :100vw;
+}
+</style>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+const elmt = document.querySelector("body");
+  function Click_change(){
+  var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color+= letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+    }
+  function eventclbk(e){
+
+  elmt.classList.toggle(  elmt.style.backgroundColor=Click_change());
+}
+elmt.onclick=eventclbk;
+</script>
+</html>-->
